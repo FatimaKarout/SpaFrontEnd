@@ -1,0 +1,114 @@
+/* ContactUs component styles */
+.contact-us {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .contact-form {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #C4D8CF;
+  }
+  
+  .map-container {
+    flex: 1;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .custom-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em; /* Adjust the font size as needed */
+    color: #ff0000; /* Set the color of the icon */
+  } 
+
+
+ 
+
+  .gmap-canvas{
+    margin-top: 10%;
+    border-radius: 10px;
+  }
+
+
+  .additional-info {
+    margin-bottom: 20px;
+  }
+  
+  .additional-info h2 {
+    color: #333;
+  }
+  
+  .additional-info p {
+    line-height: 1.6;
+  }
+  
+
+  .additional-info{
+    display: flex;
+  }
+
+
+  /* Default styles */
+.contact-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  flex: 1; /* Take up remaining space */
+  max-width: 50%; /* Limit max width for larger screens */
+}
+
+.contact-form {
+  flex: 1; /* Take up remaining space */
+  max-width: 50%; /* Limit max width for larger screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .contact-us {
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Stretch items to fill the width */
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 100%; /* Take up full width on smaller screens */
+  }
+}

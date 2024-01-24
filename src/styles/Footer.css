@@ -1,0 +1,72 @@
+.FooterContainer{
+    background-color: #C4D8CF;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer_content{
+    display: grid;
+    justify-content: center;
+    color: black;
+    row-gap: 10px;
+}
+
+.InformationDiv{
+    display: flex;
+    flex-direction: column;
+}
+.SocialDiv{
+    display: flex;
+    flex-direction: column;
+}
+.phone-icon {
+    color: blue;
+    font-size: 20px;
+  }
+.InformationDiv img {
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.SocialDiv img {
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.ContactFooterP{
+font-weight: bold;
+margin-left: 15px;
+}
+.SocialDiv a {
+    text-decoration: none;
+    color: black;
+}
+.SocialDiv a:hover {
+    text-decoration: underline;
+}
+
+.accordion-item{
+    display: grid;
+}
+.titleF{
+    font-weight: bold;
+    font-size: larger;
+   }
+
+.Auteur{
+    font-weight: bold;
+}
+@media (min-width: 320px) and (max-width:900px){
+    .FooterContainer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: auto;
+    }
+
+ 
+}

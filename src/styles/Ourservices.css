@@ -1,0 +1,196 @@
+.containerAs {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    gap:2%;
+
+}
+.elementAs {
+    width: 368px;
+    height: 465px;
+    margin-right: 20px;
+    font-style: italic;
+    border-radius: 100px 100px 0px 0px;
+
+}
+.elementBs {
+    width: 368px;
+    height: 465px;
+    margin-right: 20px;
+    font-style: italic;
+    border-radius: 100px 100px 0px 0px;}
+
+.spa2{
+    width: 260px;
+    height: 465px;
+    margin-right: 20px;
+    font-style: italic;
+    border-radius: 100px 100px 0px 0px;
+}
+
+.womenspa{
+    width: 260px;
+    height: 465px;
+    margin-right: 20px;
+    font-style: italic;
+    border-radius: 100px 100px 0px 0px;
+}
+
+
+
+.elementCs {
+    width: 368px;
+    height: 465px;
+    margin-right: 20px;
+    font-style: italic;
+    border-radius: 100px 100px 0px 0px;
+
+}
+
+.elementCs1 {
+    width: 368px;
+    height: 465px;
+    margin-right: 20px;
+    font-style: italic; 
+    border-radius: 100px 100px 0px 0px;
+}
+
+.view-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.637);
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+   border-radius: 30px;
+    width: 140px;
+    height: 44px;
+    margin-right: 50px;
+    margin-left: 80px;
+    margin-top: -90px;
+    position: absolute;
+    
+}
+
+.view-services:hover {
+    background-color: #e0e0e0;
+}
+.CategoryTitle{
+    text-align: center;
+}
+.content {
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 5px;
+}
+.containerAa {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    background-color: #C4D8CF;
+    height: auto;
+}
+.view-servicesa:hover {
+    background-color: #435486;
+}
+.view-servicesa {
+    display: flex;
+    text-decoration: none;
+    background-color: #5b6a97;
+    color: white;
+    width: 182px;
+    height: 51px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-style: normal;
+   
+}
+ .rec15{
+    width:268px ;
+    height: 323px;
+    margin-top: 80px;
+ }
+ .rec16{
+    width:268px ;
+    height: 370px;
+    margin-top: 10px;
+ }
+ .rec17{
+    width:268px ;
+    height: 323px;
+    margin-top: 80px;
+ }
+.elementAa , .elementBa , .elementCa , .elementDa{
+    margin-right: 40px;
+}
+.wea {
+    font-size: 30px;
+    font-family: Inter;
+}
+.wea , .view-productsa , .oua{
+    margin-top: 72px;
+}
+.spa-basket{
+    width: 717px;
+height: 478px;
+border-radius: 0px 100px;
+
+} 
+
+.title-content{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Your existing styles */
+
+@media (max-width: 600px) {
+    .containerAs {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .CategoryTitle {
+      font-size: 20px; /* Adjust the font size as needed for smaller screens */
+    }
+  
+    .content {
+      font-size: 40px; /* Adjust the font size as needed for smaller screens */
+    }
+
+
+    .spa-basket {
+            width: 0px;
+            height: 0px; /* 100% of the viewport height */
+            border-radius: 0px 100px; /* Remove border-radius for full-width appearance */
+            margin: 0; /* Remove margin to ensure full-width */
+          }
+      }
+  
+  
