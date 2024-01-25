@@ -1,0 +1,141 @@
+.mainCont{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+nav{
+display: flex;
+text-align: center;
+
+}
+.navLinks ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+   
+  }
+  
+  .navLinks li {
+    margin-right: 30px 
+    
+
+  }
+  
+  .navLinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+.herosection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+   padding-left: 10%;
+}
+
+.btn-items_list{
+width: 163px;
+height: 55px;
+color: white ;
+font-size: 20px;
+border-radius: 30px;
+background: #4E5652;
+} 
+
+.navButton{
+  width: 163px;
+height: 55px;
+font-size: medium;
+border-radius: 30px;
+background: #4E5652;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+} 
+.des1{
+color: #000;
+font-family: Inter;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.des2{
+color: #000;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.logo{
+  width: 697px;
+  height: 50px;
+} 
+
+ 
+
+
+
+@media (max-width: 600px) {
+  .mainCont {
+    flex-direction: column; /* Change flex direction to stack items vertically */
+    align-items: flex-start; /* Adjust alignment for mobile view */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .nav {
+    width: 100%; /* Take up full width in mobile view */
+    justify-content: space-between;
+  }
+
+  .burger-menu {
+    display: block;
+    order: 1; /* Move burger menu to the top in mobile view */
+  }
+
+  .navLinks {
+    order: 3; /* Move navigation links to the bottom in mobile view */
+  }
+
+  .navLinks ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: flex-start; /* Adjust alignment for mobile view */
+  }
+
+  .navLinks li {
+    margin: 10px 0; /* Add spacing between navigation links in mobile view */
+  }
+
+  .herosection {
+    padding-left: 0; /* Remove left padding in mobile view */
+  }
+
+  .logo {
+    width: 100%; /* Make the logo take up full width in mobile view */
+    margin-bottom: 20px; /* Add margin for better spacing */
+  }
+
+  .btn-items_list,
+  .navButton {
+    width: 100%; /* Make buttons take up full width in mobile view */
+  }
+
+  .des1 {
+    font-size: 30px; /* Adjust font size for better readability in mobile view */
+  }
+
+  .des2 {
+    font-size: 18px; /* Adjust font size for better readability in mobile view */
+  }
+}

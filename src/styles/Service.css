@@ -1,0 +1,87 @@
+.name{
+border-radius: 0px 30px;
+background: #E9DBBB;
+color: #000;
+font-family: Amiri;
+font-size: 48px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+width: 422px;
+height: 82px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+} 
+
+.benefits{
+    color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal
+}
+.ensemble{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.both{
+    display: flex;
+    gap:30px;
+    border-radius: 0px 30px;
+    background: #E9DBBB;
+    width: 20%;
+    justify-content: center;
+}
+
+
+
+
+.Imageservice{
+width: 500px;
+height: 500px;
+border-radius: 300px 300px 0px 0px;
+}
+
+.descriptionservice{
+color: #000;
+font-family: Inter;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+@media screen and (max-width: 768px) {
+    .C1 {
+      /* Adjust the styles for smaller screens */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .both {
+      /* Adjust the styles for the div containing amount and duration */
+      width: 100%;
+    }
+  
+    .ensemble {
+      /* Adjust the styles for the ensemble div */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Imageservice {
+      /* Adjust the styles for the image */
+      width: 100%;
+      max-width: 200px; /* Adjust the maximum width as needed */
+      border-radius: 0 0 300 300;
+      margin-top: 40px; /* Add some spacing between the image and the rest of the content */
+      margin-right: 70px;
+    }
+  }
