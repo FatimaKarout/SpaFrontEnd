@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useToasts } from 'react-toast-notifications';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import '../styles/Contactus.css';
 import phonecall from '../Images/phonecall.gif';
 import hour from '../Images/important.png';
