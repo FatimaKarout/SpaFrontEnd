@@ -1,33 +1,28 @@
-.sidebar {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  background-color: #111;
-  padding-top: 20px;
+table {
+  border-radius: 5px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  margin-top: 1.4rem;
+}
+.table{
+  border: 1px solid #eceaea;
+  overflow-x:auto
 }
 
-.sidebar a {
-  padding: 10px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  display: block;
-  transition: 0.3s;
+.table th{
+  font-size: 1rem;
+  text-align: center;
+  padding: 5px;
 }
 
-.sidebar a:hover {
-  background-color: #555;
-}
-
-.contentee {
-  margin-left: 200px;
-  padding: 16px;
-} 
-
-
-.button-secondary{
-  background-color:#C4D8CF;
-  color: black;
-  font-size: medium;
-
+.table td{
+font-size: 16px;
+border-bottom: 1px solid var( --container-color);
+text-align: center;
+padding: 5px;
+text-wrap: wrap;
 }

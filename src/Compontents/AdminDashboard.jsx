@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// import '../styles/Appointemt.css'
+import '../AdminDashCSS/AdminDashboard.css'
 
 
 const Reservation = () => {
