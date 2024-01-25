@@ -29,7 +29,7 @@ const MassageService = () => {
   const fetchService = async () => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_URL}/service/getServiceById/${id}`
+        `https://spabackenddd.onrender.com/service/getServiceById/${id}`
       );
       setServices(response.data.data);
     } catch (error) {
@@ -62,7 +62,7 @@ const MassageService = () => {
       const transformedDateString = formatDateTime(selectedDate);
      console.log(transformedDateString,id,userId)
       await axios.post(
-      `http://localhost:5000/appoitment/addAppointment`,
+      `https://spabackenddd.onrender.com/appoitment/addAppointment`,
         {
           dateTime: transformedDateString,
           serviceId: id,

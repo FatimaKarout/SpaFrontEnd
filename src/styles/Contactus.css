@@ -1,7 +1,7 @@
 /* ContactUs component styles */
 .contact-us {
-    display: flex;
     align-items: flex-start;
+    display: flex;
   }
   
   .contact-form {
@@ -10,6 +10,7 @@
     padding: 20px;
     border-radius: 8px;
     margin-right: 20px;
+    margin-top: 50px;
   }
   
   form {
@@ -19,6 +20,7 @@
   
   label {
     margin-bottom: 8px;
+    width: 400px;
   }
   
   input,
@@ -60,7 +62,7 @@
  
 
   .gmap-canvas{
-    margin-top: 10%;
+    margin-top: 5%;
     border-radius: 10px;
   }
 

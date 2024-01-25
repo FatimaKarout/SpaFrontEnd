@@ -13,7 +13,7 @@ const Reservation = () => {
 
   const fetchAppointments = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/appoitment/getAllAppointments"); // Update the endpoint
+      const response = await axios.get("https://spabackenddd.onrender.com/appoitment/getAllAppointments"); // Update the endpoint
       console.log(response);
       setAppointments(response.data.data);
     } catch (error) {
@@ -24,7 +24,7 @@ const Reservation = () => {
   const handleDelete = async (ID) => {
     try {
       const res = await axios.delete(
-        `${process.env.REACT_APP_URL}/appoitment/deleteAppointmentById/${ID}`
+        `https://spabackenddd.onrender.com/appoitment/deleteAppointmentById/${ID}`
       );
 
       fetchAppointments();
@@ -36,7 +36,7 @@ const Reservation = () => {
   const handleAccept = async (appointmentId) => {
     try {
       const res = await axios.put(
-        `${process.env.REACT_APP_URL}/appoitment/updateAppointment/${appointmentId}`
+        `https://spabackenddd.onrender.com/appoitment/updateAppointment/${appointmentId}`
       );
      
       fetchAppointments();

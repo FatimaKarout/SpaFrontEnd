@@ -1,57 +1,104 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { useToasts } from 'react-toast-notifications';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import '../styles/Contactus.css';
-import phonecall from '../Images/phonecall.gif'
-import hour from '../Images/important.png'
+import phonecall from '../Images/phonecall.gif';
+import hour from '../Images/important.png';
+
 
 const ContactUs = () => {
-  const [showConfirmation, setShowConfirmation] = useState(false);
+  const form = useRef();
+  const { addToast } = useToasts();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    console.log('Form submitted!');
-    // Assuming the form submission was successful, show the confirmation message
-    setShowConfirmation(true);
 
-    // You may want to reset the form fields or perform other actions here
+    // Validate form fields
+    const userName = form.current.user_name.value;
+    const userEmail = form.current.user_email.value;
+    const message = form.current.message.value;
+
+    if (!userName || !userEmail || !message) {
+      // Show notification for incomplete fields
+      addToast('Please fill out all fields', {
+        appearance: 'warning',
+        autoDismiss: true,
+      });
+      return;
+    }
+    emailjs.sendForm('service_wi5amhe', 'template_vffuj95', form.current, 'I2guNpkUqhbrktmdM') // Use USER_ID instead of PUBLIC_KEY
+     .then((result) => {
+     console.log (result.text)
+     console.log("message sent");
+      // Show notification on success
+      addToast('Message sent', {
+        appearance: 'success',
+        autoDismiss: true,
+      });
+    })
+  
+    .catch((error) => {
+        console.log(error.text);
+        // Show notification on error
+        addToast('Failed to send message', {
+          appearance: 'error',
+          autoDismiss: true,
+        });
+      });
   };
+   
 
-  const googleMapsLink = 'https://www.google.com/maps/place/ABC+Verdun/@33.8842794,35.4845502,15z';
 
   return (
-    <div className="contact-us">
-      <div className="contact-form">
-        <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+    <div  className='contact-us'>
+      <div className='contact-form'>
+      <form   className=' form' ref={form} onSubmit={sendEmail}>
+        <h1>Get in Touch</h1>
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <button type="submit">Send</button>
+      </form>
+      </div>
+      
 
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+    
+      <div className="map-section">
+        <div className="gmap-frame">
+          <iframe
+            className="gmap-canvas"
+            width="800"
+            height="450"
+            frameBorder="0"
+            scrolling="no"
+            src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Beiruth-verdun+(Heaven%20Spa)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          >
+            <a href="https://www.maps.ie/population/">Population mapping</a>
+          </iframe>
+        </div>
 
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-
-        {showConfirmation && <p>Your form is successfully filled up!</p>}
         <div className="additional-info">
         <p>
-        <strong><img src={phonecall} alt="Phone Icon" /> Phone:</strong> +123456789<br />
-          <strong><img src={hour} alt ="hour" /> Opening Hours:</strong> Monday-Friday: 9AM - 7PM <br />
+          <strong>
+            <img src={phonecall} alt="Phone Icon" /> Phone:
+          </strong>{' '}
+          +123456789
+          <br />
+          <strong>
+            <img src={hour} alt="hour" /> Opening Hours:
+          </strong>{' '}
+          Monday-Friday: 9AM - 7PM <br />
           {/* Add more information as needed */}
         </p>
       </div>
 
       </div>
-       <div className='map-section'>
-        <div className='gmap-frame'>
-      <iframe  className="gmap-canvas"  width="800" height="450" frameborder="0" scrolling="no"  src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Beiruth-verdun+(Heaven%20Spa)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population mapping</a></iframe>
-      </div>
-      </div>
-      </div>
+    </div>
+    
   );
 };
 

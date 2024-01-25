@@ -16,7 +16,7 @@ const Ourservices = () => {
   }, []);
     const fetchApp = async() =>{
         try {
-        const res = await axios.get(`${process.env.REACT_APP_URL}/service/getAllservices`)
+        const res = await axios.get(`https://spabackenddd.onrender.com/service/getAllservices`)
         setservices(res.data.data)
         console.log(res.data)
       } catch (error) {
