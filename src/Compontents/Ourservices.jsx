@@ -36,9 +36,11 @@ const Ourservices = () => {
         services.map((service) => (
           <div key={service._id}  className=''>
            <img src={service.image}  className="womenspa" alt="images" /> 
+           < div className='linkservice'>
           < Link to={`/services/${service._id}`} className="view-services">
           {service.name}
           </Link>
+          </div>
 
           
           </div>

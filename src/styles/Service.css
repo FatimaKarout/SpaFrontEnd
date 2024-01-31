@@ -84,4 +84,8 @@ line-height: normal;
       margin-top: 40px; /* Add some spacing between the image and the rest of the content */
       margin-right: 70px;
     }
+
+   .name{
+    width: 90%;
+   }
   }

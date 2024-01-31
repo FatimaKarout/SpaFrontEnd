@@ -127,10 +127,10 @@ line-height: 90px; /* 163.636% */
     .main-in-testimlonial{
         display: flex;
         flex-direction: column;
-        row-gap: 250px;
+        row-gap: 20px;
     }
     .dots-container{
-        margin-top: 290px;
+        margin-top: 60px;
         margin-left: 5%;
     }
     .name-testi{
@@ -181,6 +181,7 @@ line-height: 90px; /* 163.636% */
         font-size: 24px;
         font-weight: 200;
         line-height: 1.2;
+        text-align: center;
     }
     .testimoniage{
         font-size: 12px;
@@ -189,10 +190,10 @@ line-height: 90px; /* 163.636% */
     .main-in-testimlonial{
         display: flex;
         flex-direction: column;
-        row-gap: 250px;
+        row-gap: 60px;
     }
     .dots-container{
-        margin-top: 260px;
+        margin-top: 60px;
         margin-left: 5%;
     }
     .name-testi{
@@ -202,4 +203,6 @@ line-height: 90px; /* 163.636% */
         height:8px;
         width:100px;
     }
+
+   
 }

@@ -118,9 +118,15 @@ line-height: normal;
   }
 
   .herosection {
-    padding-left: 0; /* Remove left padding in mobile view */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
+
+  .header img{
+    width: 100%;
+  }
   .logo {
     width: 100%; /* Make the logo take up full width in mobile view */
     margin-bottom: 20px; /* Add margin for better spacing */
@@ -137,5 +143,9 @@ line-height: normal;
 
   .des2 {
     font-size: 18px; /* Adjust font size for better readability in mobile view */
+  }
+
+  .title-content{
+    font-size: 15px;
   }
 }

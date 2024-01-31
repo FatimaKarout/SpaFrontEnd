@@ -70,7 +70,7 @@
     width: 140px;
     height: 44px;
     margin-right: 50px;
-    margin-left: 80px;
+    margin-left: 40px;
     margin-top: -90px;
     position: absolute;
     
@@ -191,6 +191,10 @@ border-radius: 0px 100px;
             border-radius: 0px 100px; /* Remove border-radius for full-width appearance */
             margin: 0; /* Remove margin to ensure full-width */
           }
+
+     
+    
       }
+
   
   

@@ -43,7 +43,7 @@ const Herosection = () => {
         </div>
         <nav>
           <div className="navLinks">
-            <ul>
+            <ul className="burger-menu">
               <li>
                 <Link to="/about">About</Link>
               </li>
